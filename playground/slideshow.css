@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.slideshow_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slides {
+    width: 70%;
+    height: 70%;
+    background-image: url("https://picsum.photos/500/500?grayscale");
+    background-size: cover;
+    animation: saketh 10s infinite ease;
+    background-repeat: no-repeat;
+}
+
+@keyframes saketh {
+    25% {
+        background-image: url("https://picsum.photos/500/500?grayscale");
+    }
+    50% {
+        background-image: url("https://picsum.photos/500/500");
+    }
+    100% {
+        background-image: url("https://picsum.photos/500/500?grayscale");
+    }
+}

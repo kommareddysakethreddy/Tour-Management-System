@@ -1,0 +1,21 @@
+<section class="vw-100">
+    <div class="container border text-center">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-8">
+                <div class="row mb-4 mt-4">
+                    <h1 class="text-uppercase">Contact form</h1>
+                    <div class="small text-mutated">Queries? Send an email.</div>
+                </div>
+                <form name="mail">
+                    <input type="text" class="form-control form-control-lg my-4" name="name" placeholder="Name" required="" />
+                    <input type="email" class="form-control form-control-lg my-4" name="email" placeholder="Email" required="" />
+                    <input type="text" class="form-control form-control-lg my-4" name="subject" placeholder="Subject" required="" />
+                    <textarea cols="30" rows="5" class="form-control form-control-lg my-4" name="emaibody" placeholder="Message.." id="emailbody" required=""></textarea>
+                    <div class="btn-flex my-4">
+                        <input class="btn sendMail" onclick="fetchData(event)" value="Send" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.sendMail {
+    position: relative;
+    background-color: orangered;
+    width: auto;
+    padding: 0.8em 1.2em;
+}
+
+.btn-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row-reverse;
+    margin-right: 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+.overview-section {
+    position: relative;
+}
+
+.overview-logo {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-logo {
+    width: 100vw;
+    height: 80vh;
+}
+
+.title-div {
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+}
+
+#title {
+    display: flex;
+    font-size: 4em;
+    font-weight: 100;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 0px;
+    margin: 10px 0px;
+}
+
+.title1 {
+    background-image: linear-gradient( to right bottom, rgba(125, 213, 111, 0.85) 40%, rgba(40, 180, 135, 0.85));
+    color: white;
+    width: fit-content;
+    padding: 0px 15px;
+    margin: 0px;
+}
+
+.reviews {
+    position: relative;
+    margin-top: 20px;
+    padding: calc(5rem + var(--section-rotate)) 0;
+    z-index: 1000;
+    background: linear-gradient(to right bottom, #7dd56f, #28b487);
+    -webkit-clip-path: polygon( 0 var(--section-rotate), 100% 0, 100% calc(100% - var(--section-rotate)), 0 100%);
+}
+
+.review_cards {
+    padding: 5rem 2rem;
+    display: grid;
+    grid-column-gap: 6rem;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+}
+
+.review__card {
+    width: 25rem;
+    padding: 3rem;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%);
+    box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%);
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-sm {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile-bg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-img {
+    width: 60%;
+    height: auto;
+}
+
+.container {
+    box-shadow: 0px 0px 5px black;
+}
+
+.card-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.cirlce {
+    border-radius: 50%;
+    width: 25%;
+}

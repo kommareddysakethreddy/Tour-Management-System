@@ -1,0 +1,217 @@
+.loginSignup {
+    background-image: url('../img/background.svg');
+}
+
+#mode_change {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+#signup_reg,
+#login_reg {
+    text-align: center;
+    width: 50%;
+    padding: 1rem 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0rem 1rem 0rem 0rem;
+    font-size: 1.2em;
+}
+
+#login_reg {
+    border-right: 1px solid black;
+    border-radius: 1rem 0rem 0rem 0rem;
+}
+
+.background {
+    background-color: rgb(101, 109, 86);
+    box-shadow: 0px 0px 10px black;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.flex-search {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.justify {
+    justify-content: center;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-card {
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all ease 0.2s;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.flex-card:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.flex-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row-reverse;
+    margin-right: 40px;
+}
+
+.btn-or {
+    background-color: #eb4d4b;
+}
+
+.btn-login {
+    position: relative;
+    padding: 0.8em 1.4em;
+    width: auto;
+}
+
+.content {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.alert {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0.5em 3em;
+    -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+}
+
+.alert--success {
+    background-color: #20bf6b;
+}
+
+.alert--error {
+    background-color: #eb4d4b;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.content p:hover {
+    border-left: 3px solid white;
+}
+
+.hidden {
+    display: none;
+}
+
+.booking-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.form_cont {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    transition: all ease 1.5s;
+    transform-style: preserve-3d;
+}
+
+.forgot,
+.reset {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form_rot {
+    transform: rotateY(180deg);
+}
+
+.signup {
+    position: absolute;
+    width: 95%;
+}
+
+.login {
+    position: absolute;
+    width: 80%;
+    transform: rotateY(180deg);
+}
+
+.signup_hidden {
+    display: none;
+}
+
+.login_hidden {
+    display: block;
+}
+
+.city_img {
+    width: 24.7vw;
+}
+
+button {
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(191, 224, 213);
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 70px;
+    display: none;
+}

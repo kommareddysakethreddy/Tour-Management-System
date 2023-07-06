@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/alert.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <title>checkout</title>
+  </head>
+
+  <body>
+    <div id="paymentDetails"></div>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <section class="h-100 h-custom" style="background-color: #eee">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-lg-8 col-xl-6">
+            <div
+              class="card border-top border-bottom border-3"
+              style="border-color: #f37a27 !important"
+            >
+              <div class="card-body p-5">
+                <p class="lead fw-bold mb-5" style="color: #f37a27">
+                  Order Details
+                </p>
+                <div class="mx-n5 px-5 py-4">
+                  <div class="row">
+                    <div class="col mb-3">
+                      <p class="small text-muted mb-1">Date</p>
+                      <p class="date">10 April 2021</p>
+                    </div>
+                    <div class="col mb-3">
+                      <p class="small text-muted mb-1" id="order-id">
+                        Order No.
+                      </p>
+                      <p class="order-id">012j1gvs356c</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mx-n5 px-5 py-4" style="background-color: #f2f2f2">
+                  <div class="row">
+                    <div class="col-md-8 col-lg-9">
+                      <p>Tour name</p>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                      <p class="tour-name">Darjeeling</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 col-lg-9">
+                      <p>Price per person</p>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                      <p class="price1">$100</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 col-lg-9">
+                      <p>Total number of tickets</p>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                      <p class="nop">5</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 col-lg-9">
+                      <p class="mb-0">Charges</p>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                      <p class="mb-0">$0.0</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row my-4">
+                  <div class="col-md-4 offset-md-8 col-lg-3 offset-lg-9">
+                    <p
+                      class="lead fw-bold mb-0"
+                      id="totalprice"
+                      class="price2"
+                      style="color: #f37a27"
+                    >
+                      $500
+                    </p>
+                  </div>
+                </div>
+                <div class="row my-4">
+                  <button
+                    id="pay-btn"
+                    class="btn py-4 px-5"
+                    style="background-color: #f37a27"
+                    name="order-id"
+                  >
+                    <h3>CHECK OUT</h3>
+                  </button>
+                  <!-- <button class="btn py-4 px-5" style="background-color: #f37a27" name="order-id">
+                    <h3>CHECK OUT</h3>
+                  </button> -->
+                </div>
+
+                <p class="mt-4 pt-2 mb-0">
+                  Want any help?
+                  <a href="#!" style="color: #f37a27">Please contact us</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <form name="payment-conformation" class="flex-row">
+      <label>Order id :</label>
+      <h3 type="text" name="order-id" id="order-id"></h3>
+      <br />
+      <label>price :</label>
+      <h3 type="text" name="price" id="price"></h3>
+      <br />
+      <label>Verify Signature</label><button id="verify-button1">Verify</button>
+    </form>
+    <script>
+      document.querySelector('.date').innerHTML = new Date().toDateString();
+    </script>
+    <script type="module" src="js/razorpay.js" defer></script>
+  </body>
+</html>
